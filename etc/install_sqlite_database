@@ -1,0 +1,13 @@
+documentation for how to create a database:
+	https://sqlite.org/cli.html
+
+from the command line. use cli 'sqlite3' to create 
+	database 'example_db' with tabe 'test' and some entries:
+		>sqlite3 example_db
+		>sqlite> create table test(name varchar(20), age smallint);
+		>sqlite> insert into test values('Alex',50);
+		>sqlite> insert into test values('Sasha',30);
+
+download JDBC driver to use the database from a Java program:
+	https://bitbucket.org/xerial/sqlite-jdbc/downloads/
+include this jar-file driver into project's build path

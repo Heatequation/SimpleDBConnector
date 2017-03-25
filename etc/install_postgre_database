@@ -1,0 +1,23 @@
+
+install postgres from MacOS cli:
+	>brew install postgresql
+
+initiate new database cluster at 'data area' folder: 
+	>initdb /usr/local/var/postgres
+start server: 
+ option 1: 
+ 	>postgres -D /usr/local/var/postgres
+ option 2:
+ 	> pg_ctl -D /usr/local/var/postgres -l logfile start
+ 
+ create new database:
+  >createdb mydb
+  >start interactive terminal 'psql'
+   psql -l
+   psql mydb
+   mydb(# CREATE TABLE test (name varchar(20), age smallint);
+   mydb(# INSERT INTO test VALUES ('Sam', 40);
+      
+ 
+ download newest jdbc driver for postgresql
+ include this jar-file driver into project's build path

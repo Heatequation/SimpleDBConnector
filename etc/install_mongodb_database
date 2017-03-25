@@ -1,0 +1,14 @@
+will be completed when java driver is easier to install
+
+
+https://docs.mongodb.com/master/tutorial/install-mongodb-on-os-x
+
+
+mkdir -p /data/db
+mongod
+
+
+install Java driver:
+	http://mongodb.github.io/mongo-java-driver/
+	
+	
