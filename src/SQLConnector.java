@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class SQLConnector {
 
-	public Connection connection = null;
+	private Connection connection = null;
 
 	public SQLConnector(String path, String admin, String password) {
 		try {
@@ -19,6 +19,10 @@ public class SQLConnector {
 		} catch (SQLException e) {
 		    System.err.println(e);
 		}
+	}
+	
+	public Connection getConnection() {
+		return this.connection;
 	}
 	
 	public void example() {
